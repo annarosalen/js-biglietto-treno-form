@@ -8,20 +8,17 @@
 
 var prezzoFinale;
 
-// Nome passeggero
-var nomeUtente = document.getElementById('inserire-nome');
 
-console.log (nomeUtente.value);
 
 // km da percorrere
 var kmUtente = document.getElementById('inserire-km');
 
-console.log (kmUtente.value);
+console.log ("km da percorrere",kmUtente.value);
 
 // età passeggero
 var etaUtente = document.getElementById('inserire-fasciaeta');
 
-console.log (etaUtente.value);
+console.log ("età utente",etaUtente.value);
 
 // bottone Genera
 var genera = document.getElementById('genera-button');
@@ -33,9 +30,32 @@ var annulla = document.getElementById('annulla-button');
 
 genera.addEventListener('click',
   function() {
+    // genero struttura biglietto
     var risultato = document.getElementById('risultato');
 
+    // genero titolo struttura
     var titoloTicket = document.getElementById('titolo-biglietto');
-    titoloTicket.innerHTML = "il tuo biglietto";
+    titoloTicket.innerHTML = "iL TUO BIGLIETTO";
+
+    // genero dettagli biglietto
+    var ticket = document.getElementById('biglietto');
+
+    // genero titolo dettagli biglietto
+    var titoloDettagli = document.getElementById('dettagli');
+    titoloDettagli.innerHTML = "DETTAGLIO PASSEGGERI";
+
+    // genero etichetta nome passeggero
+    var etichettaNome = document.getElementById('titolo-nomepasseggero');
+    etichettaNome.innerHTML = "NOME PASSEGGERO";
+
+    // genero nome passeggero
+    // collego al form
+    var nomeUtente = document.getElementById('inserire-nome');
+    console.log ("nome utente",nomeUtente.value);
+    // risultato
+    var nomePasseggero = document.getElementById('nome-inserito');
+    nomePasseggero.innerHTML = nomeUtente.value;
+
+    // genero
   }
 );
