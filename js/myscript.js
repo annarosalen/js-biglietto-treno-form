@@ -15,10 +15,7 @@ var kmUtente = document.getElementById('inserire-km');
 
 console.log ("km da percorrere",kmUtente.value);
 
-// età passeggero
-var etaUtente = document.getElementById('inserire-fasciaeta');
 
-console.log ("età utente",etaUtente.value);
 
 // bottone Genera
 var genera = document.getElementById('genera-button');
@@ -56,6 +53,28 @@ genera.addEventListener('click',
     var nomePasseggero = document.getElementById('nome-inserito');
     nomePasseggero.innerHTML = nomeUtente.value;
 
-    // genero
+    // genero etichetta offerta
+    var etichettaOfferta = document.getElementById('titolo-offerta');
+    etichettaOfferta.innerHTML = "Offerta";
+
+    // genero tipo offerta età passeggero
+    // collego al form
+    var etaUtente = document.getElementById('inserire-fasciaeta');
+    console.log ("età utente",etaUtente.value);
+    // risultato
+    var fasciaEta = document.getElementById('fasciaeta-inserita');
+    fasciaEta.innerHTML = "sconto" + etaUtente.value;
+
+    // genero etichetta carrozza
+    var etichettaCarrozza = document.getElementById('titolo-carrozza');
+    etichettaCarrozza.innerHTML = "Carrozza";
+
+    // genero numero random carrozza
+    var numCarrozza = document.getElementById('numero-carrozza');
+    numCarrozza.innerHTML = Math.floor(Math.random()*10);
+    console.log("numero carrozza", numCarrozza);
+
+    
+
   }
 );
