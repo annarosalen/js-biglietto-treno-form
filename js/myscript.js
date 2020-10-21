@@ -9,23 +9,25 @@
 var prezzoFinale;
 
 // Nome passeggero
-var nomeUtente = document.getElementById('nome');
+var nomeUtente = document.getElementById('inserire-nome');
 
-console.log (nome.value);
+console.log (nomeUtente.value);
 
 // km da percorrere
-var kmUtente = document.getElementById('km');
+var kmUtente = document.getElementById('inserire-km');
 
-console.log (km.value);
+console.log (kmUtente.value);
 
 // età passeggero
-var etaUtente = document.getElementById('fascia-eta');
+var etaUtente = document.getElementById('inserire-fasciaeta');
 
-console.log (fascia-eta.value);
+console.log (etaUtente.value);
 
 // bottone Genera
+var genera = document.getElementById('genera-button');
+
 genera.addEventListener('click'
   function() {
-    
+
   }
 );
