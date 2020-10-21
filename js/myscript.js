@@ -26,8 +26,16 @@ console.log (etaUtente.value);
 // bottone Genera
 var genera = document.getElementById('genera-button');
 
-genera.addEventListener('click'
-  function() {
+// bottone annulla
+var annulla = document.getElementById('annulla-button');
 
+
+
+genera.addEventListener('click',
+  function() {
+    var risultato = document.getElementById('risultato');
+
+    var titoloTicket = document.getElementById('titolo-biglietto');
+    titoloTicket.innerHTML = "il tuo biglietto";
   }
 );
