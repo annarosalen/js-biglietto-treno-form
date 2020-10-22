@@ -14,7 +14,7 @@ var genera = document.getElementById('genera-button');
 genera.addEventListener('click',
   function() {
     // genero struttura biglietto
-    var risultato = document.getElementById('contenitore-biglietto');
+    var risultato = document.getElementById('contenitore-none').style.display="block";
 
     // genero titolo struttura
     var titoloTicket = document.getElementById('titolo-biglietto');

@@ -13,17 +13,27 @@
 
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
 
+        <!-- ********inizio form******* -->
         <div id="contenitore-form">
           <form class="" action="index.html" method="post">
 
             <div id="dati-form">
-              <input id="inserire-nome" type="text" name="Nome Cognome" value="">
-              <input id="inserire-km" type="number" name="Km da percorrere" value="">
-              <select id="inserire-fasciaeta" class="" name="Fascia d'età">
-                <option value="Minorenne">Minorenne</option>
-                <option value="Maggiorenne">Maggiorenne</option>
-                <option value="Over65">Over65</option>
-              </select>
+              <div class="col-dati">
+                <label for="">Nome e Cognome</label>
+                <input id="inserire-nome" type="text" name="Nome Cognome" value="" required>
+              </div>
+              <div class="col-dati">
+                <label for="">Km da percorrere</label>
+                <input id="inserire-km" type="number" name="Km da percorrere" value="" required>
+              </div>
+              <div class="col-dati">
+                <label >Fascia d'età</label>
+                <select id="inserire-fasciaeta" class="" name="Fascia d'età">
+                  <option value="Minorenne">Minorenne</option>
+                  <option value="Maggiorenne">Maggiorenne</option>
+                  <option value="Over65">Over65</option>
+                </select>
+              </div>
             </div>
 
             <div id="button-form">
@@ -31,43 +41,54 @@
               <button id="annulla-button" type="button" name="button">Annulla</button>
             </div>
           </form>
-        </div>
+          <!-- *********fine form*********** -->
+        </div>  <!--fine div contenitore-form-->
 
-      </div>
+      </div><!--fine div contenitore-dati-->
 
-      <div id="contenitore-biglietto">
+      <!-- ******inizio generazione biglietto****** -->
+      <div id="contenitore-none">
 
-        <h1 id="titolo-biglietto"></h1>
-        <div id="biglietto">
+        <div id="contenitore-biglietto">
 
-          <h2 id="dettagli"></h2>
+          <h1 id="titolo-biglietto"></h1>
+          <div id="biglietto">
 
-          <div class="">
-            <h3 id="titolo-nomepasseggero"></h3>
-            <span id="nome-inserito"></span>
-          </div>
+            <h2 id="dettagli"></h2>
 
-          <div class="">
-            <h3 id="titolo-offerta"></h3>
-            <span id="offerta-inserita"></span>
-          </div>
+            <div id="contenitore-datibiglietto">
 
-          <div class="">
-            <h3 id="titolo-carrozza"></h3>
-            <span id="numero-carrozza"></span>
-          </div>
+              <div id="col-nome">
+                <h3 id="titolo-nomepasseggero"></h3>
+                <span id="nome-inserito"></span>
+              </div>
 
-          <div class="">
-            <h3 id="titolo-codice"></h3>
-            <span id="numero-codice"></span>
-          </div>
+              <div id="dati-biglietto">
 
-          <div class="">
-            <h3 id="titolo-costo"></h3>
-            <span id="prezzo"></span>
-          </div>
+                <div class="col-dati">
+                  <h3 id="titolo-offerta"></h3>
+                  <span id="offerta-inserita"></span>
+                </div>
 
-        </div>
+                <div class="col-dati">
+                  <h3 id="titolo-carrozza"></h3>
+                  <span id="numero-carrozza"></span>
+                </div>
+
+                <div class="col-dati">
+                  <h3 id="titolo-codice"></h3>
+                  <span id="numero-codice"></span>
+                </div>
+
+                <div class="col-dati">
+                  <h3 id="titolo-costo"></h3>
+                  <span id="prezzo"></span>
+                </div>
+              </div>
+            </div>
+
+          </div> <!--fine div biglietto-->
+        </div> <!--fine div contenitore biglietto-->
 
 
       </div>
