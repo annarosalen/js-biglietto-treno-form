@@ -7,57 +7,72 @@
   </head>
   <body>
 
-    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <div id="contenitore-global">
 
-    <form class="" action="index.html" method="post">
-      <input id="inserire-nome" type="text" name="Nome Cognome" value="">
-      <input id="inserire-km" type="number" name="Km da percorrere" value="">
-      <select id="inserire-fasciaeta" class="" name="Fascia d'età">
-        <option id="opz1"value="Minorenne">Minorenne</option>
-        <option id="opz2"value="Maggiorenne">Maggiorenne</option>
-        <option id="opz3"value="Over65">Over65</option>
-      </select>
-      <button id="genera-button" type="button" name="button">Genera</button>
-      <button id="annulla-button" type="button" name="button">Annulla</button>
+      <div id="contenitore-dati">
 
-    </form>
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
 
-    <div id="risultato">
+        <div id="contenitore-form">
+          <form class="" action="index.html" method="post">
 
-      <h1 id="titolo-biglietto"></h1>
-      <div id="biglietto">
+            <div id="dati-form">
+              <input id="inserire-nome" type="text" name="Nome Cognome" value="">
+              <input id="inserire-km" type="number" name="Km da percorrere" value="">
+              <select id="inserire-fasciaeta" class="" name="Fascia d'età">
+                <option value="Minorenne">Minorenne</option>
+                <option value="Maggiorenne">Maggiorenne</option>
+                <option value="Over65">Over65</option>
+              </select>
+            </div>
 
-        <h2 id="dettagli"></h2>
-
-        <div class="">
-          <h3 id="titolo-nomepasseggero"></h3>
-          <span id="nome-inserito"></span>
-        </div>
-
-        <div class="">
-          <h3 id="titolo-offerta"></h3>
-          <span id="offerta-inserita"></span>
-        </div>
-
-        <div class="">
-          <h3 id="titolo-carrozza"></h3>
-          <span id="numero-carrozza"></span>
-        </div>
-
-        <div class="">
-          <h3 id="titolo-codice"></h3>
-          <span id="numero-codice"></span>
-        </div>
-
-        <div class="">
-          <h3 id="titolo-costo"></h3>
-          <span id="prezzo"></span>
+            <div id="button-form">
+              <button id="genera-button" type="button" name="button">Genera</button>
+              <button id="annulla-button" type="button" name="button">Annulla</button>
+            </div>
+          </form>
         </div>
 
       </div>
 
+      <div id="contenitore-biglietto">
 
+        <h1 id="titolo-biglietto"></h1>
+        <div id="biglietto">
+
+          <h2 id="dettagli"></h2>
+
+          <div class="">
+            <h3 id="titolo-nomepasseggero"></h3>
+            <span id="nome-inserito"></span>
+          </div>
+
+          <div class="">
+            <h3 id="titolo-offerta"></h3>
+            <span id="offerta-inserita"></span>
+          </div>
+
+          <div class="">
+            <h3 id="titolo-carrozza"></h3>
+            <span id="numero-carrozza"></span>
+          </div>
+
+          <div class="">
+            <h3 id="titolo-codice"></h3>
+            <span id="numero-codice"></span>
+          </div>
+
+          <div class="">
+            <h3 id="titolo-costo"></h3>
+            <span id="prezzo"></span>
+          </div>
+
+        </div>
+
+
+      </div>
     </div>
+
 
     <script type="text/javascript" src="js/myscript.js">
 

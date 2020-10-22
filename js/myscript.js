@@ -7,19 +7,14 @@
 // Aggiungiamo una piccola animazione al click su “Crea” e “Annulla”, se clicchiamo su annulla dobbiamo ripulire il form.
 
 
-
-
 // bottone Genera
 var genera = document.getElementById('genera-button');
-
-// bottone annulla
-var annulla = document.getElementById('annulla-button');
 
 
 genera.addEventListener('click',
   function() {
     // genero struttura biglietto
-    var risultato = document.getElementById('risultato');
+    var risultato = document.getElementById('contenitore-biglietto');
 
     // genero titolo struttura
     var titoloTicket = document.getElementById('titolo-biglietto');
@@ -110,5 +105,20 @@ genera.addEventListener('click',
     }else{
       prezzoFinale.innerHTML = prezzointero;
     }
+  }
+);
+
+
+
+// bottone annulla
+var annulla = document.getElementById('annulla-button');
+
+annulla.addEventListener('click',
+  function () {
+    document.getElementById('contenitore-biglietto').style.display = "none";
+
+    // reset dei dati compilati
+    document.getElementsById('inserire-nome').reset();
+    document.getElementById('inserire-km').reset();
   }
 );

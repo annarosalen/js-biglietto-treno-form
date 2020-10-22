@@ -1,0 +1,20 @@
+body{
+  background-color: #b91450;
+}
+
+#contenitore-global{
+  display: flex;
+  justify-content: center;
+}
+
+#contenitore-global h1{
+  color: white;
+}
+
+#contenitore-form{
+  background-color: white;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
